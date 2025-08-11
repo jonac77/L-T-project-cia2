@@ -1,6 +1,6 @@
 Project: Event Registration Page
 Description:
-A two-page HTML/CSS project for event registration using HTML5 validation only (no JavaScript).
+A two-page HTML/CSS project for event registration using HTML5 validation only.
 
 Files:
  - register.html : Event registration form
@@ -13,5 +13,5 @@ How to Run:
  3. See confirmation.html for the thank-you message.
 
 Notes:
- - HTML5 attributes handle validation (required, type, pattern).
- - Works on both desktop and mobile screens.
+   HTML5 attributes handle validation.
+   Works on both desktop and mobile screens.

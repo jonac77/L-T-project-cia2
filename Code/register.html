@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet">
+</head>
+
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.registration-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 25px rgba(100, 22, 22, 0.863);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 15px;
+  background: #056408;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #057e0b;
+}
+
+input:invalid, select:invalid {
+  border: 2px solid red;
+}
+input:valid, select:valid {
+  border: 2px solid green;
+}
+</style>
+
+<body>
+
+  <h1>Register for Our Event</h1>
+  
+  <form action="confirmation.html" method="post" class="registration-form">
+    
+    <fieldset>
+      <legend>Your Information</legend>
+      
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" 
+             pattern="[0-9]{10}" placeholder="10 digits" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Event Details</legend>
+
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="">--Choose an event--</option>
+        <option value="tech_summit">Coding Challenge</option>
+        <option value="tech_summit">Hackathon</option>
+        <option value="workshop_ai">AI Workshop</option>
+      </select>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+    </fieldset>
+
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
